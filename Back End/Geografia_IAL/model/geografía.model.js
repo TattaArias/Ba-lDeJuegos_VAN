@@ -12,7 +12,7 @@ module.exports = (sequelize, Sequelize) =>{
         vulcanismo: Sequelize.STRING,
         islas: Sequelize.STRING,
         placasTectonicas: Sequelize.STRING,
-        id_Pais: Sequelize.INTEGER,
+        idPais: Sequelize.INTEGER,
     }, {
         tableName: "geografía"
     });    

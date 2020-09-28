@@ -1,11 +1,11 @@
 const dbManager = require ('../database.config/db.manager');
 
 /**
- * POST - Crear un geografía
+ * POST - Crear un Paises
  * @param {*} req 
  * @param {*} res 
  */
-async function crearGeografía (req, res) {
+async function crearPaises (req, res) {
     // CHECK IF THE REQUEST BODY IS EMPTY
     if (!req.body) {
         res.status(400).send({
@@ -14,19 +14,13 @@ async function crearGeografía (req, res) {
         return;
     }    
     // CREATING THE OBJECT TO PERSIST
-    const nuevoObjetoGeografía = {
-            idGeografía: req.body.idGeografía,
-            coordenadasGeograficas: req.body.coordenadasGeograficas,
-            meridianosParalelos: req.body.meridianosParalelos,
-            corientesMaritimas: req.body.corientesMaritimas,
-            desiertos: req.body.desiertos,
-            vulcanismo: req.body.vulcanismo,
-            islas: req.body.islas,
-            placasTectonicas: req.body.placasTectonicas,
-            id_Pais: req.body.id_Pais,
+    const nuevoObjetoPaises = {
+            idPaises: req.body.idPaises,
+            nombrePais: req.body.nombrePais,
+            idContinente: req.body.idContinente,
     }
     // EXECUTING THE CREATE QUERY - INSERT THE OBJECT INTO DATABASE 
-    dbManager.Geografía.create(nuevoObjetoGeografía).then (
+    dbManager.Paises.create(nuevoObjetoPaises).then (
         data => {
             res.send (data);
         }
@@ -45,9 +39,9 @@ async function crearGeografía (req, res) {
  * @param {*} req 
  * @param {*} res 
  */
-async function buscarTodosGeografía (req, res){
-    try {const geografía = await dbManager.Geografía.findAll ();//Execute query
-        res.json({ data: geografía });//Send response
+async function buscarTodosPaises (req, res){
+    try {const paises = await dbManager.Paises.findAll ();//Execute query
+        res.json({ pata: Paises });//Send response
 
     } catch (e) {
         res.status(500).send({message: "Some error occurred"});// Send error message as a response
@@ -59,11 +53,11 @@ async function buscarTodosGeografía (req, res){
  * @param {*} req 
  * @param {*} res 
  */
-async function buscarGeografíaId (req, res){
+async function buscarPaisesId (req, res){
     try {
-        const { idGeografía } = req.params;//Execute query
-        const geografía = await dbManager.Geografía.findOne({ where: { idGeografía: idGeografía } });
-        res.json( geografía );//Send response
+        const { idPaises } = req.params;//Execute query
+        const paises = await dbManager.Paises.findOne({ where: { idPaises: idPaises } });
+        res.json( paises );//Send response
     } catch (e) {
         res.status(500).send({message: "Some error occurred"});// Send error message as a response 
     }
@@ -73,13 +67,13 @@ async function buscarGeografíaId (req, res){
  * @param {*} req 
  * @param {*} res 
  */
-async function editarGeografíaId (req, res){
+async function editarPaisesId (req, res){
     if (!req.body) {// CHECK IF THE REQUEST BODY IS EMPTY
         res.status(400).send({ message: "Request body is empty!!!!" });
         return;
     }
-    const nuevoObjetoGeografía = {// CREATING THE OBJECT TO PERSIST
-        idGeografía: req.body.idGeografía,
+    const nuevoObjetoPaises = {// CREATING THE OBJECT TO PERSIST
+        idPaises: req.body.idPaises,
         coordenadasGeograficas: req.body.coordenadasGeograficas,
         meridianosParalelos: req.body.meridianosParalelos,
         corientesMaritimas: req.body.corientesMaritimas,
@@ -89,8 +83,8 @@ async function editarGeografíaId (req, res){
         placasTectonicas: req.body.placasTectonicas,
         id_Pais: req.body.id_Pais,
     }
-    const { idGeografía } = req.params;//Execute query
-    dbManager.Geografía.update(nuevoObjetoGeografía, { where: { idGeografía: idGeografía } }).then (// EXECUTING THE CREATE QUERY - INSERT THE OBJECT INTO DATABASE 
+    const { idPaises } = req.params;//Execute query
+    dbManager.Paises.update(nuevoObjetoPaises, { where: { idPaises: idPaises } }).then (// EXECUTING THE CREATE QUERY - INSERT THE OBJECT INTO DATABASE 
         data => { res.send ( data ); }
     ).catch (
         e => {
@@ -104,9 +98,9 @@ async function editarGeografíaId (req, res){
  * @param {*} req 
  * @param {*} res 
  */
-async function borrarGeografíaId (req, res){ 
-    const { idGeografía } = req.params;//Execute query
-    dbManager.Geografía.destroy( { where: { idGeografía: idGeografía } })// EXECUTING THE CREATE QUERY - INSERT THE OBJECT INTO DATABASE 
+async function borrarPaisesId (req, res){ 
+    const { idPaises } = req.params;//Execute query
+    dbManager.Paises.destroy( { where: { idPaises: idPaises } })// EXECUTING THE CREATE QUERY - INSERT THE OBJECT INTO DATABASE 
         //data => { res.send (data); }
     .catch (
         e => {
@@ -115,8 +109,8 @@ async function borrarGeografíaId (req, res){
     );
 }
 
-exports.crearGeografía = crearGeografía ; 
-exports.buscarTodosGeografía = buscarTodosGeografía ; 
-exports.buscarGeografíaId = buscarGeografíaId ; 
-exports.editarGeografíaId = editarGeografíaId ;
-exports.borrarGeografíaId = borrarGeografíaId ;
+exports.crearPaises = crearPaises ; 
+exports.buscarTodosPaises = buscarTodosPaises ; 
+exports.buscarPaisesId = buscarPaisesId ; 
+exports.editarPaisesId = editarPaisesId ;
+exports.borrarPaisesId = borrarPaisesId ;
