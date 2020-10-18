@@ -1,0 +1,165 @@
+/*!
+
+ =========================================================
+ * Light Bootstrap Dashboard Angular - v1.5.1
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-angular2
+ * Copyright 2016 Creative Tim (http://www.creative-tim.com)
+ * Licensed under MIT
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+@media (min-width: 992px){
+    .typo-line{
+        padding-left: 140px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .typo-line .category{
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0px;
+        position: absolute;
+    }
+}
+
+.all-icons [class*="pe-"]{
+    font-size: 40px;
+}
+.all-icons input{
+    border: 0;
+}
+.all-icons .font-icon-detail{
+    text-align: center;
+    padding: 45px 0px 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+.all-icons .font-icon-detail input{
+    margin: 25px auto 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #aaa;
+    font-size: 13px;
+}
+
+#map{
+    position:relative;
+    width:100%;
+    height: 100%;
+}
+.map{
+    height: 280px !important;
+
+}
+.places-buttons .btn{
+    margin-bottom: 30px
+}
+.sidebar .nav > li.active-pro{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+.sidebar .nav > li.active-pro a{
+    background: rgba(255, 255, 255, 0.466);
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+.table-upgrade td:nth-child(2),
+.table-upgrade td:nth-child(3){
+    text-align: center;
+}
+.sidebar-wrapper{
+    background:  #1FB2DE;
+}
+.navbar-collapse{
+    background:  #0F385A; 
+    height: 400px;
+    padding: 0px;
+    align-content: center;
+    border-radius: 10px;
+  
+}
+.pe-7s-home{
+    color: white;
+    font-style: initial;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.pe-7s-copy-file{
+    color: white;
+    font-style: initial;
+    margin-left: 20px;
+
+}
+.pe-7s-print{
+    color: white;
+    font-style: initial;
+    margin-left: 20px;
+}
+.pe-7s-left-arrow{
+    color: white;
+    font-style: initial;
+    margin-left: 20px;
+}
+.pe-7s-right-arrow{
+    color: white;
+    font-style: initial;
+    margin-left: 20px;
+}
+.cierre-sesion{
+    color: white;
+    margin-right: 20px;
+}
+.container-fluid{
+    background-image: initial;
+}
+.img-fluid{
+    padding: 0px;   
+}
+.logo{
+    background: white;
+}
+.input-group{
+    width: 225px;
+    border-radius: 5px;
+    border:white 1px solid;
+    margin: 0;
+    height: 50px;
+    background-color: white;
+
+}
+
+.btn-primary{
+    background-color: #0F385A;
+    content: center;
+}
+.aria-hidden{
+    color: blue;
+}
+.dropdown-menu{
+    background-color: #0F385A;
+    color: #FFFFFF;
+    position: absolute;
+    left: 18px;
+    width: 225px;
+    
+}
+#dropdownMenuButton{
+    position: relative;
+    left: 18px;
+    width: 225px;
+    color: #FFFFFF;
+    height: 70px;
+    
+    
+}
