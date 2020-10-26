@@ -80,7 +80,7 @@ async function editarDatosCuriososId (req, res){
         escudo: req.body.escudo,
         bandera: req.body.bandera,
         himno: req.body.himno,
-        video: req.body.video,
+        video: req.body.video,  
         id_Pais: req.body.id_Pais,
 }
     const { idDatosCuriosos } = req.params;//Execute query

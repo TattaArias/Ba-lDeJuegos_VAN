@@ -52,3 +52,21 @@ dbManager.sequelizeConnection.authenticate()
     console.error('Unable to connect to the database:', err);
 });
 module.exports = app;
+
+
+//a = someOtherFunction();
+//b = somethingElseFuntion();
+a=1;
+b=2;
+function check(a, b, callback){
+  if (a instanceof EvalError || b instanceof EvalError){
+    callback(new Error(error.stack));
+  }else{
+    callback(null, "result");
+  }
+}
+check(a,b, function(error, result){
+  if (error) throw error
+
+  console.log(result)
+})
