@@ -12,6 +12,8 @@ import { SidebarModule } from './sidebar/sidebar.module';
 import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { MapasComponent } from './mapas/mapas.component';
+import { PoblacionComponent } from './poblacion/poblacion.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
   declarations: [
     AppComponent,
     AdminLayoutComponent,
+    MapasComponent,
+    PoblacionComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

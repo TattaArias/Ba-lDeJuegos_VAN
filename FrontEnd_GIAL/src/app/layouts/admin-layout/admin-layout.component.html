@@ -1,4 +1,3 @@
-
 <div class="wrapper">
   <div class="sidebar" data-color="red" data-image="">
       <app-sidebar></app-sidebar>
@@ -7,6 +6,9 @@
 
   <div class="main-panel">
       <navbar-cmp></navbar-cmp>
+      
+      <app-mapas></app-mapas>
+      
       <router-outlet></router-outlet>
       <div *ngIf="isMap('maps')">
           <footer-cmp></footer-cmp>
