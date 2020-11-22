@@ -78,10 +78,10 @@
     text-align: center;
 }
 .sidebar-wrapper{
-    background:  #1FB2DE;
+    background:  #2D55A6;
 }
 .navbar-collapse{
-    background:  #0F385A; 
+    background:  #BF4545; 
     height: 400px;
     padding: 0px;
     align-content: center;
@@ -140,14 +140,14 @@
 }
 
 .btn-primary{
-    background-color: #0F385A;
+    background-color: #D91A2A;
     content: center;
 }
 .aria-hidden{
     color: blue;
 }
 .dropdown-menu{
-    background-color: #0F385A;
+    background-color: #BF4545;
     color: #FFFFFF;
     position: absolute;
     left: 18px;
