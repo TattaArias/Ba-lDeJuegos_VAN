@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mapas.component.css']
 })
 export class MapasComponent implements OnInit {
+  
+  Tipo="Fisico";
+  Pais="Colombia";
 
   constructor() { }
 
