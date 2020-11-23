@@ -7,31 +7,31 @@
         </a>
     </div>
     
+
     <ul class="nav responsive-nav">   
-        <div class="col-lg-6">
-            <form class="form-search content-search navbar-form" action="" method="post">
-                <div class="input-group">
-                    <input placeholder="Buscar países" class="form-control form-text" type="text" size="15" maxlength="128" />
-                    <span class="input-group-btn">
-                        <button type="submit" class="btn btn-primary"><i class="pe-7s-search" aria-hidden="true"></i></button>
-                    </span>
-                </div>
-            </form>
-        </div><!-- /.col-lg-6 -->
-        <br>
-        <br>
-        <br>
-        <br>
+       
+        <div class="dropdown">
+            <button class="btn btn-primary  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seleccionar Pais<i class="fa pe-7s-map"></i></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" *ngFor="let pais of listaPaises; let element = index; " 
+                    (click) = "guardarPais(element)">{{ pais.nombrePais }} <i class="fa pe-7s-news-paper"></i></a></li>
+            </ul>
+        </div>
         
+        <br>
+        <div class="dropdown">
+            <a><b>Pais Selecionado: {{nombrePais}}</b></a>
+        </div>
+        <br>
+        <br>
+                
         <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultar Mapas<i class="fa pe-7s-map"></i></button>
 
             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Físico<i class="pe-7s-photo"></i></a></li>
-                <li><a class="dropdown-item" href="#">Hidrografía<i class="fa pe-7s-sun"></i></a></li>
-                <li><a class="dropdown-item" href="#">Orografía<i class="fa pe-7s-map-2"></i></a></li>
-                <li><a class="dropdown-item" href="#">Político<i class="fa pe-7s-drop"></i></a></li>
+                <li><a class="dropdown-item" *ngFor="let menuMapas of menuConsultarMapas" [routerLink]="[menuMapas.path]" 
+                (click) = "guardarTipo('Fisico')" >{{menuMapas.title}}<i class='{{menuMapas.icon}}'></i></a></li>
             </ul>
         </div>
 
@@ -78,17 +78,6 @@
             </ul>
         </div>
 
-        
 
-        <!--<div id="cover-ctn-search"></div> 
-            
-            <li class="separator hidden-lg hidden-md" *ngIf="isMobileMenu()"></li>
-                <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}}">
-                    
-                <a  [routerLink]="[menuItem.path]">
-                    <i class="{{menuItem.icon}}"></i>
-                    <p>{{menuItem.title}}</p>
-                </a>
-            </li>-->
     </ul>
 </div>

@@ -44,7 +44,7 @@ async function crearPoblacion (req, res) {
  */
 async function buscarTodosPoblacion (req, res){
     try {const poblacion = await dbManager.Poblacion.findAll ();//Execute query
-        res.json({ pata: poblacion });//Send response
+        res.json({ data: poblacion });//Send response
 
     } catch (e) {
         res.status(500).send({message: "Some error occurred"});// Send error message as a response

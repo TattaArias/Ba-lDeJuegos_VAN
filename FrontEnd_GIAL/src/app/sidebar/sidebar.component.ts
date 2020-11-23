@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PaisesService } from '../services/paises.service';
+
 
 declare const $: any;
 declare interface RouteInfo {
@@ -7,17 +9,12 @@ declare interface RouteInfo {
     icon: string;
     class: string;
 }
-export const ROUTES: RouteInfo[] = [
-    { path: '/dashboard', title: 'Consultar Mapas',  icon: 'pe-7s-map', class: '' },
-    { path: '/dashboard', title: 'Consultar Textos',  icon: 'pe-7s-notebook', class: '' },
-    { path: '/user', title: 'Temas Interesantes',  icon:'pe-7s-magic-wand', class: '' },
-    { path: '/table', title: 'Curosear',  icon:'pe-7s-glasses', class: '' },
-];
 
 export const RoutesConsultarMapas: RouteInfo[] = [
-  { path: '/dashboard', title: 'Hidrografía',  icon: 'pe-7s-map', class: '' },
-  { path: '/dashboard', title: 'Oroggrafía',  icon: 'pe-7s-map', class: '' },
-  { path: '/dashboard', title: 'Mapa Político',  icon: 'pe-7s-map', class: '' },
+  { path: '/mapaFisico',      title: 'Físico',      icon: 'pe-7s-photo',    class: '' },
+  { path: '/mapaHidrografia', title: 'Hidrografía', icon: 'fa pe-7s-sun',   class: '' },
+  { path: '/mapaOrografia',   title: 'Orografía',   icon: 'fa pe-7s-map-2', class: '' },
+  { path: '/mapaPolitico',    title: 'Político',    icon: 'fa pe-7s-drop',  class: '' },
 ];
 
 export const RoutesConsultarTextos: RouteInfo[] = [
@@ -31,26 +28,45 @@ export const RoutesTemasInteresantes: RouteInfo[] = [
 export const RoutesCuriosear: RouteInfo[] = [
   { path: '/dashboard', title: 'Consultar Mapas',  icon: 'pe-7s-map', class: '' },
 ];
+
+
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html'
 })
 export class SidebarComponent implements OnInit {
-  menuItems: any[];
+  //menuItems: any[];
   menuConsultarMapas: any[];
   menuConsultarTextos: any[];
   menuTemasInteresantes: any[];
   menuCuriosear: any[];
   
-  constructor() { }
+  listaPaises;
+  
+  nombrePais : string = '' ;
 
+  constructor(private PaisesService: PaisesService) { 
+    this.getAllPaises();
+  }
+
+  getAllPaises(){
+    this.PaisesService.getAllPaises().subscribe( misPaisesObs => {
+      this.listaPaises = misPaisesObs['data'];      
+    });
+  }
+  guardarPais(element){
+    this.nombrePais = this.listaPaises[element].nombrePais;
+    this.PaisesService.guargarNombrePais(this.nombrePais);
+  }
+  guardarTipo(element){
+    this.PaisesService.guargarTipo(element);
+  }
+    
   ngOnInit() {
-    this.menuItems = ROUTES.filter(menuItem => menuItem);
     this.menuConsultarMapas = RoutesConsultarMapas.filter(menuConsultarMapas => menuConsultarMapas);
     this.menuConsultarTextos = RoutesConsultarTextos.filter(menuConsultarTextos => menuConsultarTextos);
     this.menuTemasInteresantes = RoutesTemasInteresantes.filter(menuTemasInteresantes => menuTemasInteresantes);
     this.menuCuriosear = RoutesCuriosear.filter(menuCuriosear => menuCuriosear);
-
   }
   isMobileMenu() {
       if ($(window).width() > 991) {
