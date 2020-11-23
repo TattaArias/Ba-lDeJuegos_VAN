@@ -18,6 +18,7 @@ export class PaisesService {
   
   nombrePais: string = '';
   tipoPais: string = '';
+  numeroPais : number = 0 ;
   
   constructor(private http: HttpClient) { 
   }
@@ -25,19 +26,19 @@ export class PaisesService {
   getAllPaises(): Observable<{}>{
     return this.http.get(environment.urlPaises, httpOptions);
   }
-  
-  guargarNombrePais(nombrePais){
+  guargarNombrePais(numeroPais, nombrePais){
+    this.numeroPais = numeroPais ;
     this.nombrePais = nombrePais ;
   }
-  
   guargarTipo(tipoPais){
     this.tipoPais = tipoPais ;
   }
-
   consultarNombrePais(){
     return this.nombrePais;
   }
-
+  consultarNumeroPais(){
+    return this.numeroPais;
+  }
   consultarTipoPais(){
     return this.tipoPais;
   }

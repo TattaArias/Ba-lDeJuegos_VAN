@@ -45,8 +45,8 @@ export class SidebarComponent implements OnInit {
   menuCuriosear: any[];
   
   listaPaises;
-  
   nombrePais : string = '' ;
+  numeroPais : number = 0 ;
 
   constructor(private PaisesService: PaisesService) { 
     this.getAllPaises();
@@ -59,7 +59,8 @@ export class SidebarComponent implements OnInit {
   }
   guardarPais(element){
     this.nombrePais = this.listaPaises[element].nombrePais;
-    this.PaisesService.guargarNombrePais(this.nombrePais);
+    this.numeroPais = this.listaPaises[element].idPais ;
+    this.PaisesService.guargarNombrePais(this.numeroPais, this.nombrePais);
   }
   guardarTipo(element){
     console.log("Entra guardar1: ", element);
