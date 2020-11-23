@@ -40,6 +40,21 @@ export const RoutesDatosCuriosos: RouteInfo[] = [
   { path: '/video',                title: 'Video',           icon: 'pe-7s-map', class: '' },
 ];
 
+export const RoutesDatosInteresantes: RouteInfo[] = [
+  { path: '/pangea',                  title: 'Pangea',                     icon: 'pe-7s-map', class: '' },
+  { path: '/sismo',                   title: 'Sismo',                      icon: 'pe-7s-map', class: '' },
+  { path: '/efectoInvernadero',       title: 'Efecto Invernadero',         icon: 'pe-7s-map', class: '' },
+  { path: '/destruccionCapaDeOzono',  title: 'Destruccion Capa De Ozono',  icon: 'pe-7s-map', class: '' },
+  { path: '/fenomenoNiño',            title: 'fenomeno Del Niño',          icon: 'pe-7s-map', class: '' },
+  { path: '/ciclonesTropicales',      title: 'Ciclones Tropicales',        icon: 'pe-7s-map', class: '' },
+  { path: '/saltoDelAngel',           title: 'Salto Del Angel',            icon: 'pe-7s-map', class: '' },
+  { path: '/canalPanama',             title: 'Canal Panama',               icon: 'pe-7s-map', class: '' },
+];
+
+
+
+
+
 export const RoutesCuriosear: RouteInfo[] = [
   { path: '/dashboard', title: 'Consultar Mapas',  icon: 'pe-7s-map', class: '' },
 ];
@@ -54,10 +69,9 @@ export class SidebarComponent implements OnInit {
   menuPoblacion: any[];
   menuInformacionGeneral: any[];
   menuDatosCuriosos: any[];
-  
+  menuDatosInteresantes: any[];
 
-  menuCuriosear: any[];
-  
+
   listaPaises;
   nombrePais : string = '' ;
   numeroPais : number = 0 ;
@@ -102,10 +116,8 @@ export class SidebarComponent implements OnInit {
     this.menuPoblacion = RoutesPoblacion.filter(menuPoblacion => menuPoblacion);
     this.menuInformacionGeneral = RoutesInformacionGeneral.filter(menuInformacionGeneral => menuInformacionGeneral);
     this.menuDatosCuriosos = RoutesDatosCuriosos.filter(menuDatosCuriosos => menuDatosCuriosos);
+    this.menuDatosInteresantes = RoutesDatosInteresantes.filter(menuDatosInteresantes => menuDatosInteresantes);
 
-
-
-    this.menuCuriosear = RoutesCuriosear.filter(menuCuriosear => menuCuriosear);
   }
   isMobileMenu() {
       if ($(window).width() > 991) {

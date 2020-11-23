@@ -37,6 +37,14 @@ import { GobiernoComponent } from './gobierno/gobierno.component';
 import { EconomiaComponent } from './economia/economia.component';
 import { CulturaComponent } from './cultura/cultura.component';
 import { GeneralidadPoblacionComponent } from './generalidad-poblacion/generalidad-poblacion.component';
+import { PangeaComponent } from './pangea/pangea.component';
+import { SismoComponent } from './sismo/sismo.component';
+import { EfectoInvernaderoComponent } from './efecto-invernadero/efecto-invernadero.component';
+import { DestruccionCapaDeOzonoComponent } from './destruccion-capa-de-ozono/destruccion-capa-de-ozono.component';
+import { FenomenoNinoComponent } from './fenomeno-nino/fenomeno-nino.component';
+import { CiclonesTropicalesComponent } from './ciclones-tropicales/ciclones-tropicales.component';
+import { SaltoDelAngelComponent } from './salto-del-angel/salto-del-angel.component';
+import { CanalPanamaComponent } from './canal-panama/canal-panama.component';
 
 
 
@@ -81,6 +89,14 @@ import { GeneralidadPoblacionComponent } from './generalidad-poblacion/generalid
     EconomiaComponent,
     CulturaComponent,
     GeneralidadPoblacionComponent,
+    PangeaComponent,
+    SismoComponent,
+    EfectoInvernaderoComponent,
+    DestruccionCapaDeOzonoComponent,
+    FenomenoNinoComponent,
+    CiclonesTropicalesComponent,
+    SaltoDelAngelComponent,
+    CanalPanamaComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
