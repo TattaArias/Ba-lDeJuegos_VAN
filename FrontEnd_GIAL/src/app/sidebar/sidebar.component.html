@@ -24,21 +24,41 @@
         </div>
         <br>
         <br>
+        
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Datos Curiosos<i class="fa pe-7s-map"></i></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" *ngFor="let menuDatCur of menuDatosCuriosos; let element4 = index;" [routerLink]="[menuDatCur.path]" 
+                (click) = "guardarTipo(element4)" >{{menuDatCur.title}}</a></li>
+            </ul>  
+        </div>
+        
         <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Datos Interesantes<i class="fa pe-7s-map"></i></button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
                 <li><a class="dropdown-item" *ngFor="let menuDatInt of menuDatosInteresantes; let element5 = index;" [routerLink]="[menuDatInt.path]" 
-                (click) = "guardarTipo(element5)" >{{menuDatInt.title}}<i class='{{menuDatInt.icon}}'></i></a></li>
+                (click) = "guardarTipo(element5)" >{{menuDatInt.title}}</a></li>
+            </ul>  
+        </div>
+
+    
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Información General<i class="fa pe-7s-map"></i></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" *ngFor="let menuInfGen of menuInformacionGeneral; let element3 = index;" [routerLink]="[menuInfGen.path]" 
+                (click) = "guardarTipo(element3)" >{{menuInfGen.title}}</a></li>
             </ul>  
         </div>
 
         <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultar Mapas<i class="fa pe-7s-map"></i></button>
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mapas<i class="fa pe-7s-map"></i></button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
                 <li><a class="dropdown-item" *ngFor="let menuMapas of menuConsultarMapas; let element1 = index;" [routerLink]="[menuMapas.path]" 
-                (click) = "guardarTipo(element1)" >{{menuMapas.title}}<i class='{{menuMapas.icon}}'></i></a></li>
+                (click) = "guardarTipo(element1)" >{{menuMapas.title}}</a></li>
             </ul>
         </div>
 
@@ -47,27 +67,12 @@
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Población<i class="fa pe-7s-map"></i></button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
                 <li><a class="dropdown-item" *ngFor="let menuTextos of menuPoblacion; let element2 = index;" [routerLink]="[menuTextos.path]" 
-                (click) = "guardarTipo(element2)" >{{menuTextos.title}}<i class='{{menuTextos.icon}}'></i></a></li>
+                (click) = "guardarTipo(element2)" >{{menuTextos.title}}</a></li>
             </ul>  
         </div>
         
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Información General<i class="fa pe-7s-map"></i></button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" *ngFor="let menuInfGen of menuInformacionGeneral; let element3 = index;" [routerLink]="[menuInfGen.path]" 
-                (click) = "guardarTipo(element3)" >{{menuInfGen.title}}<i class='{{menuInfGen.icon}}'></i></a></li>
-            </ul>  
-        </div>
 
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Datos Curiosos<i class="fa pe-7s-map"></i></button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" *ngFor="let menuDatCur of menuDatosCuriosos; let element4 = index;" [routerLink]="[menuDatCur.path]" 
-                (click) = "guardarTipo(element4)" >{{menuDatCur.title}}<i class='{{menuDatCur.icon}}'></i></a></li>
-            </ul>  
-        </div>
+
         
         
 
