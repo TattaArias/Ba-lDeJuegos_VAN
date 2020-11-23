@@ -14,6 +14,10 @@ import { DemografiaComponent } from 'app/demografia/demografia.component';
 import { GobiernoComponent } from 'app/gobierno/gobierno.component';
 import { EconomiaComponent } from 'app/economia/economia.component';
 import { CulturaComponent } from 'app/cultura/cultura.component';
+import { EscudoComponent } from 'app/escudo/escudo.component';
+import { BanderaComponent } from 'app/bandera/bandera.component';
+import { HimnoComponent } from 'app/himno/himno.component';
+import { VideoComponent } from 'app/video/video.component';
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -32,6 +36,8 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'gobierno',             component: GobiernoComponent },
     { path: 'economia',             component: EconomiaComponent },
     { path: 'cultura',              component: CulturaComponent },
-
-
+    { path: 'escudo',               component: EscudoComponent },
+    { path: 'bandera',              component: BanderaComponent },
+    { path: 'himno',                component: HimnoComponent },
+    { path: 'video',                component: VideoComponent },
 ];
