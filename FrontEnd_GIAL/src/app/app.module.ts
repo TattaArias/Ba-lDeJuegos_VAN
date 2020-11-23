@@ -36,6 +36,7 @@ import { DemografiaComponent } from './demografia/demografia.component';
 import { GobiernoComponent } from './gobierno/gobierno.component';
 import { EconomiaComponent } from './economia/economia.component';
 import { CulturaComponent } from './cultura/cultura.component';
+import { GeneralidadPoblacionComponent } from './generalidad-poblacion/generalidad-poblacion.component';
 
 
 
@@ -79,6 +80,7 @@ import { CulturaComponent } from './cultura/cultura.component';
     GobiernoComponent,
     EconomiaComponent,
     CulturaComponent,
+    GeneralidadPoblacionComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
