@@ -41,8 +41,7 @@ async function crearPaises (req, res) {
  */
 async function buscarTodosPaises (req, res){
     try {const paises = await dbManager.Paises.findAll ();//Execute query
-        res.json({ pata: Paises });//Send response
-
+        res.json({ data: paises });//Send response
     } catch (e) {
         res.status(500).send({message: "Some error occurred"});// Send error message as a response
     }

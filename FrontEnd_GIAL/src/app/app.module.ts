@@ -11,9 +11,10 @@ import { SidebarModule } from './sidebar/sidebar.module';
 import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { MapasComponent } from './mapas/mapas.component';
 import { PoblacionComponent } from './poblacion/poblacion.component';
 import { LoginComponent } from './login/login.component';
+import { MapaFisicoComponent } from './mapa-fisico/mapa-fisico.component';
+
 
 
 @NgModule({
@@ -31,9 +32,9 @@ import { LoginComponent } from './login/login.component';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    MapasComponent,
     PoblacionComponent,
     LoginComponent,
+    MapaFisicoComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
