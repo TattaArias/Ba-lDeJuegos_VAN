@@ -59,9 +59,24 @@ export class SidebarComponent implements OnInit {
     this.PaisesService.guargarNombrePais(this.nombrePais);
   }
   guardarTipo(element){
+    console.log("Entra guardar1: ", element);
+    if(element == 0){
+      element = "Fisico";
+      console.log("Entra: ", element);
+    }
+    else if (element == 1){
+      element = "Hidrografia";
+    }
+    else if (element == 2){
+      element = "Orografia";
+    }
+    else if (element == 3){
+      element = "Politico";
+    }
+    else { 
+    }
     this.PaisesService.guargarTipo(element);
     this.guardarPais(this.nombrePais);
-    console.log("Entra guardar: ", this.nombrePais);
   }
     
   ngOnInit() {

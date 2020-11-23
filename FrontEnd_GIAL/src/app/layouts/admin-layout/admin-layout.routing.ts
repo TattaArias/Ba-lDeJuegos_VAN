@@ -17,8 +17,8 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',        component: HomeComponent },
     { path: 'mapaFisico',       component: MapaFisicoComponent },
     { path: 'mapaHidrografia',  component: MapaHidrografiaComponent },
-    { path: 'mapapPolitico',    component: TablesComponent },
-    { path: 'mapaOrografia',    component: TablesComponent },
+    { path: 'mapaPolitico',     component: MapaPoliticoComponent },
+    { path: 'mapaOrografia',    component: MapaOrografiaComponent },
 
     { path: 'typography',       component: TypographyComponent },
     { path: 'icons',            component: IconsComponent },
