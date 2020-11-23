@@ -70,7 +70,7 @@ export class SidebarComponent implements OnInit {
   menuInformacionGeneral: any[];
   menuDatosCuriosos: any[];
   menuDatosInteresantes: any[];
-
+  menuGeografia: any[];
 
   listaPaises;
   nombrePais : string = '' ;
@@ -117,7 +117,7 @@ export class SidebarComponent implements OnInit {
     this.menuInformacionGeneral = RoutesInformacionGeneral.filter(menuInformacionGeneral => menuInformacionGeneral);
     this.menuDatosCuriosos = RoutesDatosCuriosos.filter(menuDatosCuriosos => menuDatosCuriosos);
     this.menuDatosInteresantes = RoutesDatosInteresantes.filter(menuDatosInteresantes => menuDatosInteresantes);
-
+    this.menuGeografia = RoutesGeografia.filter(menuGeografia => menuGeografia);
   }
   isMobileMenu() {
       if ($(window).width() > 991) {

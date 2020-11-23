@@ -26,15 +26,22 @@ import { FenomenoNinoComponent } from 'app/fenomeno-nino/fenomeno-nino.component
 import { CiclonesTropicalesComponent } from 'app/ciclones-tropicales/ciclones-tropicales.component';
 import { SaltoDelAngelComponent } from 'app/salto-del-angel/salto-del-angel.component';
 import { CanalPanamaComponent } from 'app/canal-panama/canal-panama.component';
+import { CoordenadasGeograficasComponent } from 'app/coordenadas-geograficas/coordenadas-geograficas.component';
+import { MeridianosParalelosComponent } from 'app/meridianos-paralelos/meridianos-paralelos.component';
+import { CorrientesMaritimasComponent } from 'app/corrientes-maritimas/corrientes-maritimas.component';
+import { DesiertosComponent } from 'app/desiertos/desiertos.component';
+import { VulcanismoComponent } from 'app/vulcanismo/vulcanismo.component';
+import { IslasComponent } from 'app/islas/islas.component';
+import { PlacasTectonicasComponent } from 'app/placas-tectonicas/placas-tectonicas.component';
 
 
 export const AdminLayoutRoutes: Routes = [
-    { path: 'dashboard',            component: HomeComponent },
-    { path: 'mapaFisico',           component: MapaFisicoComponent },
-    { path: 'mapaHidrografia',      component: MapaHidrografiaComponent },
-    { path: 'mapaPolitico',         component: MapaPoliticoComponent },
-    { path: 'mapaOrografia',        component: MapaOrografiaComponent },
-    { path: 'generalidad',          component: GeneralidadComponent },
+    { path: 'dashboard',              component: HomeComponent },
+    { path: 'mapaFisico',             component: MapaFisicoComponent },
+    { path: 'mapaHidrografia',        component: MapaHidrografiaComponent },
+    { path: 'mapaPolitico',           component: MapaPoliticoComponent },
+    { path: 'mapaOrografia',          component: MapaOrografiaComponent },
+    { path: 'generalidad',            component: GeneralidadComponent },
     { path: 'region',                 component: RegionComponent },
     { path: 'aspectoFisico',          component: AspectoFisicoComponent },
     { path: 'tendencias',             component: TendenciasComponent },
@@ -56,4 +63,12 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'ciclonesTropicales',     component: CiclonesTropicalesComponent },
     { path: 'saltoDelAngel',          component: SaltoDelAngelComponent },
     { path: 'canalPanama',            component: CanalPanamaComponent },
+    { path: 'coordenadasGeograficas', component: CoordenadasGeograficasComponent },
+    { path: 'meridianosParalelos',    component: MeridianosParalelosComponent },
+    { path: 'corientesMaritimas',     component: CorrientesMaritimasComponent },
+    { path: 'desiertos',              component: DesiertosComponent },
+    { path: 'vulcanismo',             component: VulcanismoComponent },
+    { path: 'islas',                  component: IslasComponent },
+    { path: 'placasTectonicas',       component: PlacasTectonicasComponent },
+
 ];
