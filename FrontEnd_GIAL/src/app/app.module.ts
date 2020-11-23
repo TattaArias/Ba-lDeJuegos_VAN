@@ -20,6 +20,10 @@ import { MapaOrografiaComponent } from './mapa-orografia/mapa-orografia.componen
 import { RegionesComponent } from './regiones/regiones.component';
 import { GlosarioComponent } from './glosario/glosario.component';
 import { CoordenadasGeograficasComponent } from './coordenadas-geograficas/coordenadas-geograficas.component';
+import { GeneralidadComponent } from './generalidad/generalidad.component';
+import { RegionComponent } from './region/region.component';
+import { AspectoFisicoComponent } from './aspecto-fisico/aspecto-fisico.component';
+import { TendenciasComponent } from './tendencias/tendencias.component';
 
 
 
@@ -47,6 +51,10 @@ import { CoordenadasGeograficasComponent } from './coordenadas-geograficas/coord
     RegionesComponent,
     GlosarioComponent,
     CoordenadasGeograficasComponent,
+    GeneralidadComponent,
+    RegionComponent,
+    AspectoFisicoComponent,
+    TendenciasComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
