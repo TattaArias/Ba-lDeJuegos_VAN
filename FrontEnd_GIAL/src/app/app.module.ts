@@ -17,6 +17,8 @@ import { MapaFisicoComponent } from './mapa-fisico/mapa-fisico.component';
 import { MapaHidrografiaComponent } from './mapa-hidrografia/mapa-hidrografia.component';
 import { MapaPoliticoComponent } from './mapa-politico/mapa-politico.component';
 import { MapaOrografiaComponent } from './mapa-orografia/mapa-orografia.component';
+import { RegionesComponent } from './regiones/regiones.component';
+import { GlosarioComponent } from './glosario/glosario.component';
 
 
 
@@ -41,6 +43,8 @@ import { MapaOrografiaComponent } from './mapa-orografia/mapa-orografia.componen
     MapaHidrografiaComponent,
     MapaPoliticoComponent,
     MapaOrografiaComponent,
+    RegionesComponent,
+    GlosarioComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
