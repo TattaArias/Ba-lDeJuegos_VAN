@@ -13,12 +13,23 @@ import { MapaHidrografiaComponent } from 'app/mapa-hidrografia/mapa-hidrografia.
 import { MapaOrografiaComponent } from 'app/mapa-Orografia/mapa-Orografia.component';
 import { MapaPoliticoComponent } from 'app/mapa-Politico/mapa-Politico.component';
 
+import { PoblacionComponent } from 'app/poblacion/poblacion.component';
+import { RegionesComponent } from 'app/regiones/regiones.component';
+import { GlosarioComponent } from 'app/glosario/glosario.component';
+
+
+
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',        component: HomeComponent },
     { path: 'mapaFisico',       component: MapaFisicoComponent },
     { path: 'mapaHidrografia',  component: MapaHidrografiaComponent },
     { path: 'mapaPolitico',     component: MapaPoliticoComponent },
     { path: 'mapaOrografia',    component: MapaOrografiaComponent },
+
+    { path: 'poblacion',        component: PoblacionComponent },
+    { path: 'regiones',         component: RegionesComponent },
+    { path: 'glosario',         component: GlosarioComponent },
+
 
     { path: 'typography',       component: TypographyComponent },
     { path: 'icons',            component: IconsComponent },

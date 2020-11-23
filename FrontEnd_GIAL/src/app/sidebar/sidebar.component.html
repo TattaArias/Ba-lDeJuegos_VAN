@@ -28,7 +28,6 @@
         <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultar Mapas<i class="fa pe-7s-map"></i></button>
-
             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
                 <li><a class="dropdown-item" *ngFor="let menuMapas of menuConsultarMapas; let element1 = index;" [routerLink]="[menuMapas.path]" 
                 (click) = "guardarTipo(element1)" >{{menuMapas.title}}<i class='{{menuMapas.icon}}'></i></a></li>
@@ -37,14 +36,12 @@
 
         <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultar Textos<i class="fa pe-7s-notebook"></i></button>
-
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultar Textos<i class="fa pe-7s-map"></i></button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Población<i class="fa pe-7s-users"></i></a></li>
-                <li><a class="dropdown-item" href="#">Regiones<i class="fa pe-7s-umbrella"></i></a></li>
-                <li><a class="dropdown-item" href="#">Glosario<i class="fa pe-7s-news-paper"></i></a></li>
-            </ul>
-          </div>
+                <li><a class="dropdown-item" *ngFor="let menuTextos of menuConsultarTextos; let element2 = index;" [routerLink]="[menuMapas.path]" 
+                (click) = "guardarTipo(element2)" >{{menuTextos.title}}<i class='{{menuTextos.icon}}'></i></a></li>
+            </ul>  
+        </div>
 
         <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 

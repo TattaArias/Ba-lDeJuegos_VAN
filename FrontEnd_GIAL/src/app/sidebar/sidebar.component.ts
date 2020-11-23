@@ -18,7 +18,9 @@ export const RoutesConsultarMapas: RouteInfo[] = [
 ];
 
 export const RoutesConsultarTextos: RouteInfo[] = [
-  { path: '/dashboard', title: 'Consultar Mapas',  icon: 'pe-7s-map', class: '' },
+  { path: '/poblacion',       title: 'Poblacion',   icon: 'fa pe-7s-users',     class: '' },
+  { path: '/regiones',        title: 'Regiones',    icon: 'fa pe-7s-umbrella',  class: '' },
+  { path: '/glosario',        title: 'Glosario',    icon: 'fa pe-7s-new-paper', class: '' },
 ];
 
 export const RoutesTemasInteresantes: RouteInfo[] = [
