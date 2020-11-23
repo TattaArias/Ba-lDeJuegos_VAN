@@ -31,7 +31,6 @@ export const RoutesInformacionGeneral: RouteInfo[] = [
   { path: '/gobierno',             title: 'Gobierno',        icon: 'pe-7s-map', class: '' },
   { path: '/economia',             title: 'Economia',        icon: 'pe-7s-map', class: '' },
   { path: '/cultura',              title: 'Cultura',         icon: 'pe-7s-map', class: '' },
-
 ];
 
 export const RoutesCuriosear: RouteInfo[] = [
@@ -47,6 +46,7 @@ export class SidebarComponent implements OnInit {
   menuConsultarMapas: any[];
   menuPoblacion: any[];
   menuInformacionGeneral: any[];
+  
 
   menuCuriosear: any[];
   
@@ -91,8 +91,11 @@ export class SidebarComponent implements OnInit {
     
   ngOnInit() {
     this.menuConsultarMapas = RoutesConsultarMapas.filter(menuConsultarMapas => menuConsultarMapas);
-    this.menuPoblacion = RoutesPoblacion.filter(menuConsultarTextos => menuConsultarTextos);
-    this.menuInformacionGeneral = RoutesInformacionGeneral.filter(menuTemasInteresantes => menuTemasInteresantes);
+    this.menuPoblacion = RoutesPoblacion.filter(menuPoblacion => menuPoblacion);
+    this.menuInformacionGeneral = RoutesInformacionGeneral.filter(menuInformacionGeneral => menuInformacionGeneral);
+
+
+
     this.menuCuriosear = RoutesCuriosear.filter(menuCuriosear => menuCuriosear);
   }
   isMobileMenu() {

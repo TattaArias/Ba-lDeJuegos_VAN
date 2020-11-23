@@ -38,42 +38,21 @@
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Población<i class="fa pe-7s-map"></i></button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" *ngFor="let menuTextos of menuConsultarTextos; let element2 = index;" [routerLink]="[menuTextos.path]" 
+                <li><a class="dropdown-item" *ngFor="let menuTextos of menuPoblacion; let element2 = index;" [routerLink]="[menuTextos.path]" 
                 (click) = "guardarTipo(element2)" >{{menuTextos.title}}<i class='{{menuTextos.icon}}'></i></a></li>
             </ul>  
         </div>
-
+        
         <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Temas Interesantes<i class="fa pe-7s-magic-wand"></i></button>
-
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Información General<i class="fa pe-7s-map"></i></button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Coordenadas geográficas</a></li>
-                <li><a class="dropdown-item" href="#">Meridianos y paralelos</a></li>
-                <li><a class="dropdown-item" href="#">Pangea</a></li>
-                <li><a class="dropdown-item" href="#">Placas Tectónicas</a></li>
-                <li><a class="dropdown-item" href="#">Corrientes Marinas</a></li>
-                <li><a class="dropdown-item" href="#">Ciclones tropicales</a></li>
-                <li><a class="dropdown-item" href="#">Desiertos</a></li>
-                <li><a class="dropdown-item" href="#">Vulcanismo</a></li>
-                <li><a class="dropdown-item" href="#">Sismos</a></li>
-                <li><a class="dropdown-item" href="#">Efecto Invernadero</a></li>
-                <li><a class="dropdown-item" href="#">Destrucción de la capa de ozono</a></li>
-                <li><a class="dropdown-item" href="#">Fenómeno del niño</a></li>
-            </ul>
+                <li><a class="dropdown-item" *ngFor="let menuInfGen of menuInformacionGeneral; let element3 = index;" [routerLink]="[menuInfGen.path]" 
+                (click) = "guardarTipo(element3)" >{{menuInfGen.title}}<i class='{{menuInfGen.icon}}'></i></a></li>
+            </ul>  
         </div>
-
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Curiosear<i class="fa pe-7s-glasses"></i></button>
-
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Banderas<i class="fa pe-7s-flag"></i></a></li>
-                <li><a class="dropdown-item" href="#">Escudos<i class="fa pe-7s-shield"></i></a></li>
-                <li><a class="dropdown-item" href="#">Himnos<i class="fa pe-7s-musiclist"></i></a></li>
-                <li><a class="dropdown-item" href="#">Videos<i class="fa pe-7s-play"></i></a></li>
-            </ul>
-        </div>
+        
+        
 
 
     </ul>
