@@ -32,7 +32,6 @@ export class PaisesService {
   
   guargarTipo(tipoPais){
     this.tipoPais = tipoPais ;
-    console.log("Servicio: ", this.tipoPais);
   }
 
   consultarNombrePais(){

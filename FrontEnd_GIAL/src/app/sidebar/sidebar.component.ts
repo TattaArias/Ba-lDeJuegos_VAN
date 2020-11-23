@@ -17,10 +17,11 @@ export const RoutesConsultarMapas: RouteInfo[] = [
   { path: '/mapaPolitico',    title: 'Politico',    icon: 'fa pe-7s-drop',  class: '' },
 ];
 
-export const RoutesConsultarTextos: RouteInfo[] = [
-  { path: '/poblacion',       title: 'Poblacion',   icon: 'fa pe-7s-users',     class: '' },
-  { path: '/regiones',        title: 'Regiones',    icon: 'fa pe-7s-umbrella',  class: '' },
-  { path: '/glosario',        title: 'Glosario',    icon: 'fa pe-7s-new-paper', class: '' },
+export const RoutesPoblacion: RouteInfo[] = [
+  { path: '/generalidad',     title: 'Generalidad',    icon: 'fa pe-7s-users',      class: '' },
+  { path: '/region',          title: 'Region',         icon: 'fa pe-7s-umbrella',   class: '' },
+  { path: '/aspectoFisico',   title: 'Aspecto Fisico', icon: 'fa pe-7s-news-paper', class: '' },
+  { path: '/tendencias',      title: 'Tendencias',     icon: 'fa pe-7s-news-paper', class: '' },
 ];
 
 export const RoutesTemasInteresantes: RouteInfo[] = [
@@ -37,9 +38,9 @@ export const RoutesCuriosear: RouteInfo[] = [
   templateUrl: './sidebar.component.html'
 })
 export class SidebarComponent implements OnInit {
-  //menuItems: any[];
   menuConsultarMapas: any[];
-  menuConsultarTextos: any[];
+  menuPoblacion: any[];
+
   menuTemasInteresantes: any[];
   menuCuriosear: any[];
   
@@ -83,7 +84,7 @@ export class SidebarComponent implements OnInit {
     
   ngOnInit() {
     this.menuConsultarMapas = RoutesConsultarMapas.filter(menuConsultarMapas => menuConsultarMapas);
-    this.menuConsultarTextos = RoutesConsultarTextos.filter(menuConsultarTextos => menuConsultarTextos);
+    this.menuPoblacion = RoutesPoblacion.filter(menuConsultarTextos => menuConsultarTextos);
     this.menuTemasInteresantes = RoutesTemasInteresantes.filter(menuTemasInteresantes => menuTemasInteresantes);
     this.menuCuriosear = RoutesCuriosear.filter(menuCuriosear => menuCuriosear);
   }

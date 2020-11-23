@@ -19,6 +19,7 @@ import { MapaPoliticoComponent } from './mapa-politico/mapa-politico.component';
 import { MapaOrografiaComponent } from './mapa-orografia/mapa-orografia.component';
 import { RegionesComponent } from './regiones/regiones.component';
 import { GlosarioComponent } from './glosario/glosario.component';
+import { CoordenadasGeograficasComponent } from './coordenadas-geograficas/coordenadas-geograficas.component';
 
 
 
@@ -45,6 +46,7 @@ import { GlosarioComponent } from './glosario/glosario.component';
     MapaOrografiaComponent,
     RegionesComponent,
     GlosarioComponent,
+    CoordenadasGeograficasComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
