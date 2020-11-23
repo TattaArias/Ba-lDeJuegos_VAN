@@ -51,9 +51,15 @@ export const RoutesDatosInteresantes: RouteInfo[] = [
   { path: '/canalPanama',             title: 'Canal Panama',               icon: 'pe-7s-map', class: '' },
 ];
 
-
-
-
+export const RoutesGeografia: RouteInfo[] = [
+  { path: '/coordenadasGeograficas',  title: 'Coordenadas Geográficas',    icon: 'pe-7s-map', class: '' },
+  { path: '/meridianosParalelos',     title: 'Meridianos y paralelos',     icon: 'pe-7s-map', class: '' },
+  { path: '/corientesMaritimas',      title: 'Corrientes Marítimas',       icon: 'pe-7s-map', class: '' },
+  { path: '/desiertos',               title: 'Desiertos',                  icon: 'pe-7s-map', class: '' },
+  { path: '/vulcanismo',              title: 'Vulcanismo',                 icon: 'pe-7s-map', class: '' },
+  { path: '/islas',                   title: 'Islas',                      icon: 'pe-7s-map', class: '' },
+  { path: '/placasTectonicas',        title: 'Placas Tectónicas',          icon: 'pe-7s-map', class: '' },
+];
 
 export const RoutesCuriosear: RouteInfo[] = [
   { path: '/dashboard', title: 'Consultar Mapas',  icon: 'pe-7s-map', class: '' },
