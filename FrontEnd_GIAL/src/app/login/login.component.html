@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        
+        <div class="collapse navbar-collapse" >
+            <div >
+                <img src="assets\img\Logo_Kimera.png" width="150px"/>
+                    <p>Bienvenido a Geografía interactiva de América Latina</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+    </div>
+</nav>
+
+<div class= "modal-dialog text-center">
+    <div class= "col-sm-8 main-section">
+      <div class= "modal-content">
+        <div class= "col-12 user-img">
+          <img src = "assets\img\user.jpg">
+        </div>
+        <form class="col-12">
+            <div class="form-group" id="user-group">
+                <input type="text" class ="form-control" placeholder="Nombre de usuario" [(ngModel)]="username" name = "username" required>
+            </div>
+            <div class="form-group" id="contraseña-group">
+                <input type="password" class ="form-control" placeholder="contraseña" [(ngModel)]="password" name = "password" required>
+            </div>
+            <button type (click) ="login()" class = "btn btn-light"><i class="fa pe-7s-check"></i>Ingresar</button>
+        </form>
+        <div class="col-12 forgot">
+            <a href = "#" class="nav-link" type (click)="restore()">Recordar contraseña</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>

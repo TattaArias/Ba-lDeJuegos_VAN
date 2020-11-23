@@ -8,12 +8,12 @@ import { AppRoutingModule } from './app.routing';
 import { NavbarModule } from './shared/navbar/navbar.module';
 import { FooterModule } from './shared/footer/footer.module';
 import { SidebarModule } from './sidebar/sidebar.module';
-
 import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { MapasComponent } from './mapas/mapas.component';
 import { PoblacionComponent } from './poblacion/poblacion.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -25,13 +25,15 @@ import { PoblacionComponent } from './poblacion/poblacion.component';
     NavbarModule,
     FooterModule,
     SidebarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
     MapasComponent,
     PoblacionComponent,
+    LoginComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
