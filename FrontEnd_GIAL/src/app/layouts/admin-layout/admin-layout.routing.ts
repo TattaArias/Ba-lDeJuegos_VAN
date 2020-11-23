@@ -14,6 +14,10 @@ import { DemografiaComponent } from 'app/demografia/demografia.component';
 import { GobiernoComponent } from 'app/gobierno/gobierno.component';
 import { EconomiaComponent } from 'app/economia/economia.component';
 import { CulturaComponent } from 'app/cultura/cultura.component';
+import { EscudoComponent } from 'app/escudo/escudo.component';
+import { BanderaComponent } from 'app/bandera/bandera.component';
+import { HimnoComponent } from 'app/himno/himno.component';
+import { VideoComponent } from 'app/video/video.component';
 import { PangeaComponent } from 'app/pangea/pangea.component';
 import { SismoComponent } from 'app/sismo/sismo.component';
 import { EfectoInvernaderoComponent } from 'app/efecto-invernadero/efecto-invernadero.component';
@@ -27,6 +31,23 @@ import { CanalPanamaComponent } from 'app/canal-panama/canal-panama.component';
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',            component: HomeComponent },
     { path: 'mapaFisico',           component: MapaFisicoComponent },
+    { path: 'mapaHidrografia',      component: MapaHidrografiaComponent },
+    { path: 'mapaPolitico',         component: MapaPoliticoComponent },
+    { path: 'mapaOrografia',        component: MapaOrografiaComponent },
+    { path: 'generalidad',          component: GeneralidadComponent },
+    { path: 'region',               component: RegionComponent },
+    { path: 'aspectoFisico',        component: AspectoFisicoComponent },
+    { path: 'tendencias',           component: TendenciasComponent },
+    { path: 'generalidadPoblacion', component: GeneralidadPoblacionComponent },
+    { path: 'breveHistoria',        component: BreveHistoriaComponent },
+    { path: 'demografia',           component: DemografiaComponent },
+    { path: 'gobierno',             component: GobiernoComponent },
+    { path: 'economia',             component: EconomiaComponent },
+    { path: 'cultura',              component: CulturaComponent },
+    { path: 'escudo',               component: EscudoComponent },
+    { path: 'bandera',              component: BanderaComponent },
+    { path: 'himno',                component: HimnoComponent },
+    { path: 'video',                component: VideoComponent },
     { path: 'mapaHidrografia',        component: MapaHidrografiaComponent },
     { path: 'mapaPolitico',           component: MapaPoliticoComponent },
     { path: 'mapaOrografia',          component: MapaOrografiaComponent },
@@ -48,5 +69,4 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'ciclonesTropicales',     component: CiclonesTropicalesComponent },
     { path: 'saltoDelAngel',          component: SaltoDelAngelComponent },
     { path: 'canalPanama',            component: CanalPanamaComponent },
-
 ];

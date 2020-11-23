@@ -33,6 +33,13 @@ export const RoutesInformacionGeneral: RouteInfo[] = [
   { path: '/cultura',              title: 'Cultura',         icon: 'pe-7s-map', class: '' },
 ];
 
+export const RoutesDatosCuriosos: RouteInfo[] = [
+  { path: '/escudo',               title: 'Escudo',          icon: 'pe-7s-map', class: '' },
+  { path: '/bandera',              title: 'Bandera',         icon: 'pe-7s-map', class: '' },
+  { path: '/himno',                title: 'Himno',           icon: 'pe-7s-map', class: '' },
+  { path: '/video',                title: 'Video',           icon: 'pe-7s-map', class: '' },
+];
+
 export const RoutesDatosInteresantes: RouteInfo[] = [
   { path: '/pangea',                  title: 'Pangea',                     icon: 'pe-7s-map', class: '' },
   { path: '/sismo',                   title: 'Sismo',                      icon: 'pe-7s-map', class: '' },
@@ -61,6 +68,7 @@ export class SidebarComponent implements OnInit {
   menuConsultarMapas: any[];
   menuPoblacion: any[];
   menuInformacionGeneral: any[];
+  menuDatosCuriosos: any[];
   menuDatosInteresantes: any[];
 
 
@@ -107,6 +115,7 @@ export class SidebarComponent implements OnInit {
     this.menuConsultarMapas = RoutesConsultarMapas.filter(menuConsultarMapas => menuConsultarMapas);
     this.menuPoblacion = RoutesPoblacion.filter(menuPoblacion => menuPoblacion);
     this.menuInformacionGeneral = RoutesInformacionGeneral.filter(menuInformacionGeneral => menuInformacionGeneral);
+    this.menuDatosCuriosos = RoutesDatosCuriosos.filter(menuDatosCuriosos => menuDatosCuriosos);
     this.menuDatosInteresantes = RoutesDatosInteresantes.filter(menuDatosInteresantes => menuDatosInteresantes);
 
   }
