@@ -25,6 +25,9 @@ export class DatosCuriososService {
   getAllDatosCuriosos(): Observable<{}>{
     return this.http.get(environment.urlDatosCuriosos, httpOptions);
   }
+  consultarPais(element){
+    return this.http.get(environment.urlDatosCuriosos + element , httpOptions);
+  }
 
 
 }

@@ -59,7 +59,7 @@ async function buscarTodosMapas (req, res){
 async function buscarMapasId (req, res){
     try {
         const { idMapas } = req.params;//Execute query
-        const mapas = await dbManager.Mapas.findOne({ where: { idMapas: idMapas } });
+        const mapas = await dbManager.Mapas.findOne({ where: { idPais: idMapas } });
         res.json( mapas );//Send response
     } catch (e) {
         res.status(500).send({message: "Some error occurred"});// Send error message as a response 

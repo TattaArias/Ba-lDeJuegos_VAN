@@ -55,7 +55,7 @@ async function buscarTodosContinentes (req, res){
 async function buscarContinentesId (req, res){
     try {
         const { idContinentes } = req.params;//Execute query
-        const continentes = await dbManager.Continentes.findOne({ where: { idContinentes: idContinentes } });
+        const continentes = await dbManager.Continentes.findOne({ where: { idPais: idContinentes } });
         res.json( continentes );//Send response
     } catch (e) {
         res.status(500).send({message: "Some error occurred"});// Send error message as a response 

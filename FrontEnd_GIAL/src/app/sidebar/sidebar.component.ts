@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PaisesService } from '../services/paises.service';
-
+import { DatosCuriososService } from '../services/datos-curiosos.service';
 
 declare const $: any;
 declare interface RouteInfo {
@@ -82,7 +82,7 @@ export class SidebarComponent implements OnInit {
   nombrePais : string = '' ;
   numeroPais : number = 0 ;
 
-  constructor(private PaisesService: PaisesService) { 
+  constructor(private PaisesService: PaisesService, private DatosCuriososService: DatosCuriososService) { 
     this.getAllPaises();
   }
 
@@ -97,7 +97,6 @@ export class SidebarComponent implements OnInit {
     this.PaisesService.guargarNombrePais(this.numeroPais, this.nombrePais);
   }
   guardarTipo(element){
-    console.log("Entra guardar1: ", element);
     if(element == 0){
       element = "Fisico";
       console.log("Entra: ", element);
@@ -116,7 +115,27 @@ export class SidebarComponent implements OnInit {
     this.PaisesService.guargarTipo(element);
     this.guardarPais(this.nombrePais);
   }
-    
+  
+  guardarDatoCurioso(element){
+    if(element == 0){
+      element = "escudo";
+    }
+    else if (element == 1){
+      element = "bandera";
+    }
+    else if (element == 2){
+      element = "himno";
+    }
+    else if (element == 3){
+      element = "video";
+    }
+    else { 
+    }
+    this.PaisesService.guargarTipo(element);
+    this.guardarPais(this.nombrePais);
+    this.DatosCuriososService.consultarPais(this.PaisesService.consultarNumeroPais());
+  }
+
   ngOnInit() {
     this.menuConsultarMapas = RoutesConsultarMapas.filter(menuConsultarMapas => menuConsultarMapas);
     this.menuPoblacion = RoutesPoblacion.filter(menuPoblacion => menuPoblacion);

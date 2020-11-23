@@ -59,7 +59,7 @@ async function buscarTodosPoblacion (req, res){
 async function buscarPoblacionId (req, res){
     try {
         const { idPoblacion } = req.params;//Execute query
-        const poblacion = await dbManager.Poblacion.findOne({ where: { idPoblacion: idPoblacion } });
+        const poblacion = await dbManager.Poblacion.findOne({ where: { idPais: idPoblacion } });
         res.json( poblacion );//Send response
     } catch (e) {
         res.status(500).send({message: "Some error occurred"});// Send error message as a response 

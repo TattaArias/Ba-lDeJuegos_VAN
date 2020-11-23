@@ -30,7 +30,7 @@
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Datos Curiosos<i class="fa pe-7s-map"></i></button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
                 <li><a class="dropdown-item" *ngFor="let menuDatCur of menuDatosCuriosos; let element4 = index;" [routerLink]="[menuDatCur.path]" 
-                (click) = "guardarTipo(element4)" >{{menuDatCur.title}}</a></li>
+                (click) = "guardarDatoCurioso(element4)" >{{menuDatCur.title}}</a></li>
             </ul>  
         </div>
         

@@ -62,7 +62,7 @@ async function buscarTodosGeografía (req, res){
 async function buscarGeografíaId (req, res){
     try {
         const { idGeografía } = req.params;//Execute query
-        const geografía = await dbManager.Geografía.findOne({ where: { idGeografía: idGeografía } });
+        const geografía = await dbManager.Geografía.findOne({ where: { idPais: idGeografía } });
         res.json( geografía );//Send response
     } catch (e) {
         res.status(500).send({message: "Some error occurred"});// Send error message as a response 

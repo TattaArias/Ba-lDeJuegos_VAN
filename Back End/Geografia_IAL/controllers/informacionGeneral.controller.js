@@ -61,7 +61,7 @@ async function buscarTodosInformacionGeneral (req, res){
 async function buscarInformacionGeneralId (req, res){
     try {
         const { idInformacionGeneral } = req.params;//Execute query
-        const informacionGeneral = await dbManager.InformacionGeneral.findOne({ where: { idInformacionGeneral: idInformacionGeneral } });
+        const informacionGeneral = await dbManager.InformacionGeneral.findOne({ where: { idPais: idInformacionGeneral } });
         res.json( informacionGeneral );//Send response
     } catch (e) {
         res.status(500).send({message: "Some error occurred"});// Send error message as a response 

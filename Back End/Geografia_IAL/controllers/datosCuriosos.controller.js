@@ -59,7 +59,7 @@ async function buscarTodosDatosCuriosos (req, res){
 async function buscarDatosCuriososId (req, res){
     try {
         const { idDatosCuriosos } = req.params;//Execute query
-        const datosCuriosos = await dbManager.DatosCuriosos.findOne({ where: { idDatosCuriosos: idDatosCuriosos } });
+        const datosCuriosos = await dbManager.DatosCuriosos.findOne({ where: { idPais: idDatosCuriosos } });
         res.json( datosCuriosos );//Send response
     } catch (e) {
         res.status(500).send({message: "Some error occurred"});// Send error message as a response 
