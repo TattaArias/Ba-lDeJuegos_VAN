@@ -16,16 +16,26 @@ import { MapaFisicoComponent } from './mapa-fisico/mapa-fisico.component';
 import { MapaHidrografiaComponent } from './mapa-hidrografia/mapa-hidrografia.component';
 import { MapaPoliticoComponent } from './mapa-politico/mapa-politico.component';
 import { MapaOrografiaComponent } from './mapa-orografia/mapa-orografia.component';
-<<<<<<< HEAD
-import { RegionesComponent } from './regiones/regiones.component';
-import { GlosarioComponent } from './glosario/glosario.component';
 import { CoordenadasGeograficasComponent } from './coordenadas-geograficas/coordenadas-geograficas.component';
 import { GeneralidadComponent } from './generalidad/generalidad.component';
 import { RegionComponent } from './region/region.component';
 import { AspectoFisicoComponent } from './aspecto-fisico/aspecto-fisico.component';
 import { TendenciasComponent } from './tendencias/tendencias.component';
-=======
->>>>>>> 980219d6ca4cd4b278fa33fbc84b54906192b99f
+import { EscudoComponent } from './escudo/escudo.component';
+import { BanderaComponent } from './bandera/bandera.component';
+import { HimnoComponent } from './himno/himno.component';
+import { VideoComponent } from './video/video.component';
+import { MeridianosParalelosComponent } from './meridianos-paralelos/meridianos-paralelos.component';
+import { CorrientesMaritimasComponent } from './corrientes-maritimas/corrientes-maritimas.component';
+import { DesiertosComponent } from './desiertos/desiertos.component';
+import { VulcanismoComponent } from './vulcanismo/vulcanismo.component';
+import { IslasComponent } from './islas/islas.component';
+import { PlacasTectonicasComponent } from './placas-tectonicas/placas-tectonicas.component';
+import { BreveHistoriaComponent } from './breve-historia/breve-historia.component';
+import { DemografiaComponent } from './demografia/demografia.component';
+import { GobiernoComponent } from './gobierno/gobierno.component';
+import { EconomiaComponent } from './economia/economia.component';
+import { CulturaComponent } from './cultura/cultura.component';
 
 
 
@@ -49,16 +59,26 @@ import { TendenciasComponent } from './tendencias/tendencias.component';
     MapaHidrografiaComponent,
     MapaPoliticoComponent,
     MapaOrografiaComponent,
-<<<<<<< HEAD
-    RegionesComponent,
-    GlosarioComponent,
     CoordenadasGeograficasComponent,
     GeneralidadComponent,
     RegionComponent,
     AspectoFisicoComponent,
     TendenciasComponent,
-=======
->>>>>>> 980219d6ca4cd4b278fa33fbc84b54906192b99f
+    EscudoComponent,
+    BanderaComponent,
+    HimnoComponent,
+    VideoComponent,
+    MeridianosParalelosComponent,
+    CorrientesMaritimasComponent,
+    DesiertosComponent,
+    VulcanismoComponent,
+    IslasComponent,
+    PlacasTectonicasComponent,
+    BreveHistoriaComponent,
+    DemografiaComponent,
+    GobiernoComponent,
+    EconomiaComponent,
+    CulturaComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
