@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { PaisesService } from '../services/paises.service';
 
 @Component({
-  selector: 'app-mapa-fisico',
-  templateUrl: './mapa-fisico.component.html',
-  styleUrls: ['./mapa-fisico.component.css']
+  selector: 'app-mapa-orografia',
+  templateUrl: './mapa-orografia.component.html',
+  styleUrls: ['./mapa-orografia.component.css']
 })
-export class MapaFisicoComponent implements OnInit {
+export class MapaOrografiaComponent implements OnInit {
 
   tipoPais: string = '' ;
   nombrePais: string = '' ;
@@ -22,5 +22,6 @@ export class MapaFisicoComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
 }

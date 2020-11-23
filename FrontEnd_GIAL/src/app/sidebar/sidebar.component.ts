@@ -11,10 +11,10 @@ declare interface RouteInfo {
 }
 
 export const RoutesConsultarMapas: RouteInfo[] = [
-  { path: '/mapaFisico',      title: 'Físico',      icon: 'pe-7s-photo',    class: '' },
-  { path: '/mapaHidrografia', title: 'Hidrografía', icon: 'fa pe-7s-sun',   class: '' },
-  { path: '/mapaOrografia',   title: 'Orografía',   icon: 'fa pe-7s-map-2', class: '' },
-  { path: '/mapaPolitico',    title: 'Político',    icon: 'fa pe-7s-drop',  class: '' },
+  { path: '/mapaFisico',      title: 'Fisico',      icon: 'pe-7s-photo',    class: '' },
+  { path: '/mapaHidrografia', title: 'Hidrografia', icon: 'fa pe-7s-sun',   class: '' },
+  { path: '/mapaOrografia',   title: 'Orografia',   icon: 'fa pe-7s-map-2', class: '' },
+  { path: '/mapaPolitico',    title: 'Politico',    icon: 'fa pe-7s-drop',  class: '' },
 ];
 
 export const RoutesConsultarTextos: RouteInfo[] = [
