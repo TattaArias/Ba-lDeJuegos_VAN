@@ -6,6 +6,11 @@
 export const environment = {
   production: false,
   urlPaises:             'http://localhost:3000/paises/',
+  urlDatosCuriosos:      'http://localhost:3000/datosCuriosos/',
+  urlDatosInteresantes:  'http://localhost:3000/datosInteresantes/',
+  urlGeografia:          'http://localhost:3000/geografía/',
+  urlInformacionGeneral: 'http://localhost:3000/informacionGeneral/',
+  urlPoblacion:          'http://localhost:3000/poblacion/',
 
 };
 
