@@ -8,12 +8,13 @@ import { AppRoutingModule } from './app.routing';
 import { NavbarModule } from './shared/navbar/navbar.module';
 import { FooterModule } from './shared/footer/footer.module';
 import { SidebarModule } from './sidebar/sidebar.module';
-
 import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { PoblacionComponent } from './poblacion/poblacion.component';
+import { LoginComponent } from './login/login.component';
 import { MapaFisicoComponent } from './mapa-fisico/mapa-fisico.component';
+
 
 
 @NgModule({
@@ -25,12 +26,14 @@ import { MapaFisicoComponent } from './mapa-fisico/mapa-fisico.component';
     NavbarModule,
     FooterModule,
     SidebarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
     PoblacionComponent,
+    LoginComponent,
     MapaFisicoComponent,
   ],
   providers: [],
