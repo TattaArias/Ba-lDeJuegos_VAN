@@ -19,6 +19,8 @@ export class MapaFisicoComponent implements OnInit {
   consultarDatos(){
     this.nombrePais = this.PaisesService.consultarNombrePais();
     this.tipoPais = this.PaisesService.consultarTipoPais();
+    console.log("Componente1: ",this.nombrePais);
+    console.log("Componente2: ",this.tipoPais);
   }
 
   ngOnInit(): void {

@@ -60,6 +60,8 @@ export class SidebarComponent implements OnInit {
   }
   guardarTipo(element){
     this.PaisesService.guargarTipo(element);
+    this.guardarPais(this.nombrePais);
+    console.log("Entra guardar: ", this.nombrePais);
   }
     
   ngOnInit() {
