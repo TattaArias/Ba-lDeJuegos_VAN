@@ -14,24 +14,39 @@ import { DemografiaComponent } from 'app/demografia/demografia.component';
 import { GobiernoComponent } from 'app/gobierno/gobierno.component';
 import { EconomiaComponent } from 'app/economia/economia.component';
 import { CulturaComponent } from 'app/cultura/cultura.component';
+import { PangeaComponent } from 'app/pangea/pangea.component';
+import { SismoComponent } from 'app/sismo/sismo.component';
+import { EfectoInvernaderoComponent } from 'app/efecto-invernadero/efecto-invernadero.component';
+import { DestruccionCapaDeOzonoComponent } from 'app/destruccion-capa-de-ozono/destruccion-capa-de-ozono.component';
+import { FenomenoNinoComponent } from 'app/fenomeno-nino/fenomeno-nino.component';
+import { CiclonesTropicalesComponent } from 'app/ciclones-tropicales/ciclones-tropicales.component';
+import { SaltoDelAngelComponent } from 'app/salto-del-angel/salto-del-angel.component';
+import { CanalPanamaComponent } from 'app/canal-panama/canal-panama.component';
 
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',            component: HomeComponent },
     { path: 'mapaFisico',           component: MapaFisicoComponent },
-    { path: 'mapaHidrografia',      component: MapaHidrografiaComponent },
-    { path: 'mapaPolitico',         component: MapaPoliticoComponent },
-    { path: 'mapaOrografia',        component: MapaOrografiaComponent },
-    { path: 'generalidad',          component: GeneralidadComponent },
-    { path: 'region',               component: RegionComponent },
-    { path: 'aspectoFisico',        component: AspectoFisicoComponent },
-    { path: 'tendencias',           component: TendenciasComponent },
-    { path: 'generalidadPoblacion', component: GeneralidadPoblacionComponent },
-    { path: 'breveHistoria',        component: BreveHistoriaComponent },
-    { path: 'demografia',           component: DemografiaComponent },
-    { path: 'gobierno',             component: GobiernoComponent },
-    { path: 'economia',             component: EconomiaComponent },
-    { path: 'cultura',              component: CulturaComponent },
-
+    { path: 'mapaHidrografia',        component: MapaHidrografiaComponent },
+    { path: 'mapaPolitico',           component: MapaPoliticoComponent },
+    { path: 'mapaOrografia',          component: MapaOrografiaComponent },
+    { path: 'generalidad',            component: GeneralidadComponent },
+    { path: 'region',                 component: RegionComponent },
+    { path: 'aspectoFisico',          component: AspectoFisicoComponent },
+    { path: 'tendencias',             component: TendenciasComponent },
+    { path: 'generalidadPoblacion',   component: GeneralidadPoblacionComponent },
+    { path: 'breveHistoria',          component: BreveHistoriaComponent },
+    { path: 'demografia',             component: DemografiaComponent },
+    { path: 'gobierno',               component: GobiernoComponent },
+    { path: 'economia',               component: EconomiaComponent },
+    { path: 'cultura',                component: CulturaComponent },
+    { path: 'pangea',                 component: PangeaComponent },
+    { path: 'sismo',                  component: SismoComponent },
+    { path: 'efectoInvernadero',      component: EfectoInvernaderoComponent },
+    { path: 'destruccionCapaDeOzono', component: DestruccionCapaDeOzonoComponent },
+    { path: 'fenomenoNino',           component: FenomenoNinoComponent },
+    { path: 'ciclonesTropicales',     component: CiclonesTropicalesComponent },
+    { path: 'saltoDelAngel',          component: SaltoDelAngelComponent },
+    { path: 'canalPanama',            component: CanalPanamaComponent },
 
 ];

@@ -24,7 +24,15 @@
         </div>
         <br>
         <br>
-                
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Datos Interesantes<i class="fa pe-7s-map"></i></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" *ngFor="let menuDatInt of menuDatosInteresantes; let element5 = index;" [routerLink]="[menuDatInt.path]" 
+                (click) = "guardarTipo(element5)" >{{menuDatInt.title}}<i class='{{menuDatInt.icon}}'></i></a></li>
+            </ul>  
+        </div>
+
         <div class="dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultar Mapas<i class="fa pe-7s-map"></i></button>
